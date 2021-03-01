@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    font-family: "Kurale", serif;
+    overflow-x: hidden;
+    background-color: #FAF9F6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 12000ms;
+    animation-duration: 12000ms;
+  }
+  
+  .scaling-svg-container {
+    position: relative;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  
+  .featured {
+    max-width: 800px;
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .line::after {
+    content: "";
+    width: 100%;
+    display: block;
+    padding: 0.5px 0;
+    background-color: black;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+  }
+  
+  .featured::before {
+    content: "";
+    padding: 1.7em 1.2em 0;
+    background-image: url("../img/Ashthalakshmi_-_Star_of_Laxmi.svg");
+    width: 100px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .scaling-svg {
+    position: absolute;
+    max-width: 100%;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0px;
+    z-index: 6;
+  }
+  
+  .carousel-wrap {
+    max-height: 100%;
+  }
+  
+  /* parallax classes start */
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bg-holder {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+  
+    .content {
+      color: #000;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      max-width: 520px;
+      min-width: 300px;
+      margin: 0 auto;
+      background-color: #ffffffd4;
+      padding: 35px;
+    }
+  
+    &#pic1 {
+      background-image: url("../img/pic1.jpg");
+    }
+  
+    &#pic2 {
+      background-image: url("../img/pic2.jpg");
+    }
+  }
+  
+  /* parallax classes end */
+  
+  /* common classes start */
+  
+  .featured {
+    padding: 1em 0 3em 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  button {
+    background-color: #a78400;
+  
+    /* border-radius: 40px; */
+    color: white;
+    border: 2px solid #a78400;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 10px 0 10px;
+    text-align: center;
+    font-family: 'Kurale';
+  
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding: 0.8em 2em;
+      border-radius: 40px;
+      font-size: 1.4em;
+    }
+  }
+  
+  .secundary-button {
+    text-align: center;
+  
+    button a {
+      color: white;
+    }
+  }
+  
+  .aligned-text {
+    text-align: center;
+    margin: 45px auto;
+  
+    h1 {
+      font-family: Kural;
+      font-size: 4vh;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin: 0.1em 0 0.1em;
+    }
+  
+    p {
+      margin-bottom: 3em;
+      font-size: 3vh;
+    }
+  }
+  
+  /* common classes ends */
+  
+  /* nav */
+  
+  .main-menu {
+    width: 100%;
+    margin: 0 auto;
+  
+    /* border: 1px solid red; */
+    align-items: flex-start;
+  
+    /* justify-content: center; */
+    position: absolute;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    top: 60%;
+    display: none;
+  
+    a {
+      text-decoration: none;
+      min-width: 160px;
+      min-width: 90px;
+      color: black;
+      font-family: Kural;
+      font-size: 22px;
+      position: relative;
+      transition-duration: 0.3s;
+    }
+  
+    .first-anchor {
+      left: -80px;
+    }
+  
+    .second-anchor {
+      right: -80px;
+    }
+  
+    a:hover {
+      color: #d0a401;
+    }
+  }
+  
+  /* nav ends */
+  
+  /* nav mobile */
+  
+  .responsive-menu {
+    overflow: hidden;
+    z-index: 10;
+    bottom: 60px;
+    right: 0;
+    height: 0px;
+    width: 100%;
+    background-color: #d0a401;
+    text-transform: uppercase;
+    position: absolute;
+    min-width: fit-content;
+    font-weight: bold;
+    padding: 0 70px;
+  }
+  
+  .mobile-menu {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+  
+    li {
+      margin-bottom: 10px;
+  
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        color: white;
+      }
+    }
+  }
+  
+  /* nav  mobile ends */
+  
+  .mobile-menu-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: #a78400;
+    color: white;
+    padding: 13px;
+    font-size: 1.5em;
+    z-index: 99;
+  }
+  
+  .welcome-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .contact-item {
+    padding: 0 20px;
+  }
+  
+  /* project section */
+  
+  .project-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 0.5fr));
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0 0px 0.0em 0px;
+    row-gap: 2em;
+    padding: 5em 0;
+  }
+  
+  .project-item img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-header h2 {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .project-item {
+    &:hover {
+      border: 0;
+      -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.61);
+      -moz-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.61);
+      box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.61);
+    }
+  
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0;
+    transition: 0.3s ease-out;
+  
+    img {
+      height: calc(100% - 6.8rem);
+      width: 100%;
+      object-fit: cover;
+      max-height: 40vh;
+    }
+  }
+  
+  .project-title {
+    text-decoration: none;
+    color: #2f2f2f;
+    padding: 1em 0 0.5em;
+    position: relative;
+
+    span {
+      content: "1";
+      font-size: 150px;
+      position: absolute;
+      z-index: -1;
+      color: #e4e4e4;
+      top: -50px;
+      left: -8px;
+    }
+  }
+  
+  /* project section ends */
+  
+  /* info section  */
+  
+  .text-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .single-item {
+      padding: 10px 50px;
+    }
+  }
+  
+  .project-image-xl {
+    display: none;
+  }
+  
+  .project-image-xs {
+    display: flex;
+  }
+  
+  /* info section ends  */
+  
+  /* project contact */
+  
+  #contact {
+    background-color: black;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-items: center;
+    color: white;
+  }
+  
+  .contact-links a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.6em;
+  }
+  
+  /* project contact ends */
+  
+  /* footer  */
+  
+  footer {
+    color: #585858;
+    background-color: #0e0e0e;
+    height: auto;
+    padding: 15px;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /* footer ends */
+  
+  /* responsive queries */
+  
+  @media (min-width: 600px) {
+    .responsive-menu, .mobile-menu-icon {
+      display: none;
+    }
+  
+    .main-menu, .nav-desk {
+      display: flex;
+    }
+  
+    footer .container {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  
+    .project-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50%, 0.5fr));
+      row-gap: 6em;
+    }
+  
+    .project-image-xl {
+      display: flex;
+    }
+  
+    .project-image-xs {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bg-holder {
+      &#pic1 {
+        background-image: url("../img/pic1_m.jpg");
+      }
+  
+      &#pic2 {
+        background-image: url("../img/pic2_m.jpg");
+      }
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .bg-holder {
+      &#pic1 {
+        background-image: url("../img/pic1_bigger.jpg");
+      }
+  
+      &#pic2 {
+        background-image: url("../img/pic2_bigger.jpg");
+      }
+    }
+  }
+  
+  /* responsive queries ends*/
